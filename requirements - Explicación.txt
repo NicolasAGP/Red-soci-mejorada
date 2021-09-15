@@ -1,0 +1,79 @@
+django==3.2.2
+
+
+¡*** argon2-cffi==20.1.0
+ #Argon nos ayuda para crear un algoritmo y encriptar contraseñas  ***!
+
+
+
+
+¡*** django-cors-headers==3.7.0 ***!
+
+
+
+¡*** django-environ==0.4.5
+
+#Este paquete nos ayuda a crear variables de ambientes, con los cuales resguardamos la info como las llaves,etc
+Modo de uso en settings
+import os
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
+ENVIRONMENT = env  ***!
+
+
+
+djangorestframework==3.12.4
+pillow==8.2.0
+psycopg2==2.8.6
+¡*** stripe==2.58.0 ***!
+
+
+
+
+¡*** boto3==1.17.97
+#Nos permite trabajar con AWS junto a storage_backends y configuracion de if debug en settings
+
+***!
+
+
+
+
+
+
+
+
+
+
+
+
+
+django-storages==1.11.1
+django-taggit==1.5.1
+django-allauth==0.44.0
+django-rest-auth==0.9.5
+django-crispy-forms==1.12.0
+
+
+*¡¡¡  crispy-tailwind==0.5.0
+#Diseño web de django-tailwind !!!*
+
+
+
+
+django-ckeditor==6.1.0
+django-tailwind==2.2.0
+markdown==3.3.4
+gunicorn==20.1.0
+whitenoise==5.2.0
+channels==3.0.4
+django-redis==5.0.0
+sqlparse==0.3.1
+asgiref==3.4.1
+pytz==2020.5
+mutagen==1.45.1
+django-celery-beat==2.2.1
+celery==5.1.2
+python-dateutil==2.8.1
