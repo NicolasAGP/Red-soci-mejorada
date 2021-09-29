@@ -1,8 +1,6 @@
 {% load static %}
 {% load tailwind_tags %}
 
-
-
 <html lang="en">
 
 <head>
@@ -12,22 +10,52 @@
 
     {% tailwind_css %}
 
+    <!-- AlpineJS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <title>  </title>
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--JQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+
+
+    {% block extra_head %}{% endblock extra_head %}
+    <title>{% block title %}{% endblock title %}</title>
 </head>
-<body>
+
+<body class="bg-gray-100 dark:bg-gray-800 flex justify-center">
 
 {% block navbar %} {% endblock navbar %}
 
-{% block left_sidebar %} {% endblock left_sidebar %}
 
-{% block content %} {% endblock content %}
+   <div class="flex justify-center h-screen">
 
-{% block right_sidebar %} {% endblock right_sidebar %}
+  <!--left sidebar-->
+   <div class="w-1/4 pt-14 hidden h-full  xl:flex flex-col fixed top-0px left-0">
+  {% block left_sidebar %} {% endblock left_sidebar %}
+  </div>
 
+  <!--main content-->
+  <div class="w-full lg:w-2/3 xl:w-2/5 pt-32 lg:pt-16 px-2">
+  {% include 'messages.html' %}
+  {% block content %} {% endblock content %}
+  </div>
+
+  <!--right content-->
+  <div class="w-1/5 pt-16 h-full hidden xl:block px-4 fixed top-0 right-0">
+  {% block right_sidebar %} {% endblock right_sidebar %}
+  </div>
+
+</div>
+
+
+  <!--FOOTER-->
 {% block footer %} {% endblock footer %}
 
-{% block javascript %} {% endblock javascript %}
+
+{% block javascript %}{% endblock javascript %}
 
 </body>
 </html>

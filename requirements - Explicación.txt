@@ -52,7 +52,26 @@ psycopg2==2.8.6
 
 django-storages==1.11.1
 django-taggit==1.5.1
-django-allauth==0.44.0
+
+
+
+
+¡*** django-allauth==0.44.0
+Es para la authentificación de Django "Puedes buscarlo en La doc de Django"
+***!
+
+
+
+
+
+
+
+
+
+
+
+
+
 django-rest-auth==0.9.5
 django-crispy-forms==1.12.0
 
