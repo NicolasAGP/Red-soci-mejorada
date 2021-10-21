@@ -27,7 +27,11 @@ ENVIRONMENT = env  ***!
 
 djangorestframework==3.12.4
 pillow==8.2.0
-psycopg2==2.8.6
+¡*** psycopg2==2.8.6
+#Esta libreria nos ayuda a trabajar con postgress
+***!
+
+
 ¡*** stripe==2.58.0 ***!
 
 
@@ -85,7 +89,12 @@ django-crispy-forms==1.12.0
 django-ckeditor==6.1.0
 django-tailwind==2.2.0
 markdown==3.3.4
-gunicorn==20.1.0
+
+¡*** gunicorn==20.1.0
+Es un servidor http para unix, sin el no podremos desplegar 
+ 
+***!
+
 whitenoise==5.2.0
 channels==3.0.4
 django-redis==5.0.0
