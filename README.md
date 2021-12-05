@@ -44,6 +44,8 @@ python manage.py migrate
 python manage.py runserver
 ```
 Then open http://localhost:8000 in your borwser and create a new account with test as company name. We mapped `test.localhost` to `127.0.0.1`. So, it should work properly.
+
+
 Community
 =========
 
@@ -60,7 +62,7 @@ Credits
 
 Nicolas Gonzalez
 
-![image](https://avatars.githubusercontent.com/u/68659436?v=4?width=890&button=false)
+![image](https://avatars.githubusercontent.com/u/68659436?s=96&v=4?width=890&button=false)
 
 
 
